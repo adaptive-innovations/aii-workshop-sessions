@@ -57,7 +57,6 @@ while AmountCalculated > 0:
         CurrencyCounts[9] = CurrencyCounts[9] + 1
         AmountCalculated -= 0.01
     else:
-        print(AmountCalculated)
         AmountCalculated = 0
 
 # Print out the response
