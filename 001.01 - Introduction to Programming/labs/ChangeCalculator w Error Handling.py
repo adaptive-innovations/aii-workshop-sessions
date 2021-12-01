@@ -36,7 +36,6 @@ while entrySuccess == False:
 
 # Calculate the change.
 AmountChange = AmountTendered - AmountOwed
-print("The change amount is: $"+str(AmountChange))
 
 # Figure out the Change Currency
 AmountCalculated = (int(AmountChange*100)) / 100
@@ -76,8 +75,12 @@ while AmountCalculated > 0:
 
 # Print out the response
 indexPosition = 0
-print("Please give the customer the following currencies: ")
-for each in CurrencyTypes:
-    if CurrencyCounts[indexPosition] != 0:
-        print(each + ": " + str(CurrencyCounts[indexPosition]))
-    indexPosition += 1
+if AmountChange > 0:
+    print("The change amount is: $"+str(AmountChange))
+    print("Please give the customer the following currencies: ")
+    for each in CurrencyTypes:
+        if CurrencyCounts[indexPosition] != 0:
+            print(each + ": " + str(CurrencyCounts[indexPosition]))
+        indexPosition += 1
+else:
+    print("No change owed!")
