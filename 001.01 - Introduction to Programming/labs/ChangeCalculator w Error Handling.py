@@ -7,8 +7,10 @@ AmountTenderedEntry = None
 AmountTendered = None
 entrySuccess = None
 CurrencyTypes = ["$100's", "$50's", "$20's", "$10's", "$5's", "$1's", "Quarters", "Dimes", "Nickels", "Pennies"]
+CurrencyCounts = []
 AmountChange = None
 AmountCalculated = None
+indexPosition = 0
 
 # Get the amount owed.
 entrySuccess = False
@@ -37,7 +39,6 @@ while entrySuccess == False:
 AmountChange = AmountTendered - AmountOwed
 
 # Generate memory to store the values
-CurrencyCounts = []
 for each in CurrencyTypes:
     CurrencyCounts.append(0)
 
@@ -78,7 +79,6 @@ while AmountCalculated > 0:
         AmountCalculated = 0
 
 # Print out the response
-indexPosition = 0
 if AmountChange > 0:
     print("The change amount is: $"+str(AmountChange))
     print("Please give the customer the following currencies: ")
