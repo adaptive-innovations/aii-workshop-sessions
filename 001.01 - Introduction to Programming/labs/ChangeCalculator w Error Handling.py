@@ -7,7 +7,6 @@ AmountTenderedEntry = None
 AmountTendered = None
 entrySuccess = None
 CurrencyTypes = ["$100's", "$50's", "$20's", "$10's", "$5's", "$1's", "Quarters", "Dimes", "Nickels", "Pennies"]
-CurrencyCounts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 AmountChange = None
 AmountCalculated = None
 
@@ -36,6 +35,11 @@ while entrySuccess == False:
 
 # Calculate the change.
 AmountChange = AmountTendered - AmountOwed
+
+# Generate memory to store the values
+CurrencyCounts = []
+for each in CurrencyTypes:
+    CurrencyCounts.append(0)
 
 # Figure out the Change Currency
 AmountCalculated = (int(AmountChange*100)) / 100
