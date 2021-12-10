@@ -1,0 +1,20 @@
+{
+    "Title": "Best Chocolate Chip Cookies",
+    "Time Required": "1 Hour",
+    "Servings": "24",
+    "Ingredients": [
+      {
+        "ingredient": "butter",
+        "qty": "1/4 cup"
+      },
+      {
+        "ingredient": "flour",
+        "qty": "4 cups"
+      }
+    ],
+    "Steps": [
+      "Do this do that!",
+      "Mix in a bowl.",
+      "Bake for 5 minutes at 350F"
+    ]
+  }
