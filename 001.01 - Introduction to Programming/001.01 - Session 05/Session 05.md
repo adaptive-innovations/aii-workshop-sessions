@@ -47,7 +47,11 @@ print(theFamily['kids'][2])
 # Iterate through a nested list
 for kid in theFamily['kids']:
     print(kid)
+
+# cast dict as JSON
+x = json.dumps(theFamily)
 ```
+
 
 ## Challenge
 Create a JSON object which describes a cooking recipe.
