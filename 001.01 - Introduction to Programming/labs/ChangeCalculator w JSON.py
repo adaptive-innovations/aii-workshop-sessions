@@ -4,15 +4,16 @@ AmountOwed = 0
 AmountTenderedEntry = 0
 AmountTendered = 0
 entrySuccess = False
+pesos = {"Pesetas":{"qty":0,"value":10000},"Quintos":{"qty":0,"value":1000},"Tostons":{"qty":0,"value":25},"Pesos":{"qty":0,"value":1}}
 usd = {"$100's":{"qty":0,"value":10000},"$50's":{"qty":0,"value":5000},"$20's":{"qty":0,"value":2000},"$10's":{"qty":0,"value":1000},"$5's":{"qty":0,"value":500},"$1's":{"qty":0,"value":100},"Quarters":{"qty":0,"value":25},"Dimes":{"qty":0,"value":10},"Nickels":{"qty":0,"value":5},"Pennies":{"qty":0,"value":1}}
-currencies = usd
+currencies = pesos
 AmountChange = 0
 AmountCalculated = 0
 indexPosition = 0
 
 # Manager doesn't want us to use bills over $20
-del usd["$100's"]
-del usd["$50's"]
+#del usd["$100's"]
+#del usd["$50's"]
 
 # Get the amount owed.
 while entrySuccess == False:

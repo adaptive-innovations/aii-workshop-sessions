@@ -1,0 +1,22 @@
+{
+    "Title": "Best Chocolate Chip Cookies",
+    "Author": "Graysen Rowland",
+    "Image": "https://www.onceuponachef.com/images/2018/11/Gluten_Free_Chocolate_Chip_Cookies-200-of-1.jpg",
+    "Time Required": "Shfifty-Five Hours",
+    "Servings": "24",
+    "Ingredients": [
+      {
+        "ingredient": "Butter",
+        "qty": "1/4 cup"
+      },
+      {
+        "ingredient": "Flour",
+        "qty": "4 cups"
+      }
+    ],
+    "Steps": [
+      "Combine the dry ingredients.",
+      "Mix in a bowl.",
+      "Bake for 5 minutes at 350F"
+    ]
+}
