@@ -6,7 +6,6 @@ class Employee:
         self.nameFull = self.nameFirst + ' ' + self.nameLast
 
 Minion1 = Employee('Greg', 'Kapler')
-
 Minion1.nickname = 'Kaplermeister'
 
 print(Minion1.nameFirst + ' "' + Minion1.nickname + '" ' + Minion1.nameLast)
