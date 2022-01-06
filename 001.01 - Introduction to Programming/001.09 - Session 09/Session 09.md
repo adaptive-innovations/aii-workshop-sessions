@@ -16,6 +16,11 @@
 03
 - Declare a list with multiple strings already in it.
 - Declare an empty list, and append multiple strings into it. Then, sort the strings alphabetically.
+- Check to see if an item is contained in the list.
+- Retrieve an item from the list, and print that item.
+- Remove a specific item from the list.
+- Print the number of items in the list.
+- Create a FOR loop which prints each item in the list.
 
 ## Challenge
 All of the challenges above.
