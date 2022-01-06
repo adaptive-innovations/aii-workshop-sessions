@@ -1,5 +1,5 @@
 # APP A: Introduction to Programming
-## Session 07
+## Session 08
 
 |Session Time|Facilitator|Starting URL                                                          |
 |------------|-----------|----------------------------------------------------------------------|
