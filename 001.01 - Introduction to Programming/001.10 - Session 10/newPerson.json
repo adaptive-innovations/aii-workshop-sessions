@@ -1,8 +1,8 @@
 {
-    "name": {
-        "first": "Jon",
-        "middle": "Jacob",
-        "last": "Doe"
-    },
-    "age": 55
+   "name": {
+      "first": "Jon",
+      "middle": "Jacob",
+      "last": "Doe"
+   },
+   "age": 55
 }

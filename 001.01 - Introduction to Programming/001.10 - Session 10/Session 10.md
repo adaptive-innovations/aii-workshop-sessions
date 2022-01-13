@@ -45,7 +45,7 @@ csvFile = open('People.csv')
 # Read the object
 fileContents = csv.reader(csvFile, delimiter=',')
 for row in fileContents:
-        print(row)
+    print(row)
 
 csvFile.close()
 ```
@@ -75,14 +75,33 @@ f.close()
 
 Create or open a CSV file, overwrite the contents, then close it.
 ```py
-import json
-person = {"name":{"first":"Jon","middle":"Jacob","last":"Doe"},"age":55}
+import csv
 
-f = open("newPerson.json", "w")
-f.write(json.dumps(person, indent=3))
+csvFile = open('newPeople.csv', mode='w', newline='')
 
-f.close()
+data = []
+data.append(["nameFirst","nameLast","age"]) # Headers
+data.append(["Bill","Jones","55"])
+data.append(["Jill","Joens","54"])
+
+file_writer = csv.writer(csvFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+for row in data:
+    file_writer.writerow(row)
+
+csvFile.close()
+```
+
+LIFE HACK: Use the location of the .py file as current working path.
+```py
+import os
+os.chdir(os.path.dirname(os.path.realpath(__file__)))
 ```
 
 ## Challenge
-All of the challenges above.
+Demonstrate each of the following actions:
+- Read from a text file that you made.
+- Read from a JSON file that you made.
+- Read from a CSV file that you made.
+- Write to a text file.
+- Write to a JSON file.
+- Write to a CSV file.
