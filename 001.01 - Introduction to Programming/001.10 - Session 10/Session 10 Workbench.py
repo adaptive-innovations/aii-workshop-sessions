@@ -1,8 +1,12 @@
-import json 
+import csv
 
-f = open("person.json")
+csvFile = open('newPeople.csv', mode='w')
 
-personDict = json.loads(f.read())
-print(personDict)
+# Read the object
+data = {["nameFirst", "nameLast", "age"], ["Bill", "Jones", "55"], ["Jill", "Joens", "54"]}
 
-f.close()
+file_writer = csv.writer(csvFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+for row in data:
+    file_writer.writerow(row)
+
+csvFile.close()

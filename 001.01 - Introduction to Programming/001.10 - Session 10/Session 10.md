@@ -10,7 +10,7 @@
 ## File Handling
 Open a text file, read the contents, then close it.
 ```py
-# Open the file
+# Open the text file
 f = open("demofile.txt", "r")
 
 # Read the lines
@@ -30,6 +30,56 @@ f = open("person.json")
 # Read the object
 personDict = json.loads(f.read())
 print(personDict)
+
+f.close()
+```
+
+Open a CSV file, read the contents, then close it.
+
+[See Instructions: Working with CSV](https://realpython.com/python-csv/#parsing-csv-files-with-pythons-built-in-csv-library)
+```py
+import csv
+
+csvFile = open('People.csv')
+
+# Read the object
+fileContents = csv.reader(csvFile, delimiter=',')
+for row in fileContents:
+        print(row)
+
+csvFile.close()
+```
+
+Create or open a text file, overwrite the contents, then close it.
+```py
+inviteList = ["Johnny Depp", "Leo Decaprio", "Andy Serkis", "Angelina Jolie"]
+
+f = open("demowritefile.txt", "w")
+
+for attendee in inviteList:
+    f.write(attendee + "\n")
+
+f.close()
+```
+
+Create or open a JSON file, overwrite the contents, then close it.
+```py
+import json
+person = {"name":{"first":"Jon","middle":"Jacob","last":"Doe"},"age":55}
+
+f = open("newPerson.json", "w")
+f.write(json.dumps(person, indent=3))
+
+f.close()
+```
+
+Create or open a CSV file, overwrite the contents, then close it.
+```py
+import json
+person = {"name":{"first":"Jon","middle":"Jacob","last":"Doe"},"age":55}
+
+f = open("newPerson.json", "w")
+f.write(json.dumps(person, indent=3))
 
 f.close()
 ```

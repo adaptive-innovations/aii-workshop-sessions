@@ -7,7 +7,7 @@
 ## Review Challenges
 Session 01 Review
 - Use an operator to multiply two user input numbers and print the result.
-- Contatenate two user input strings and print the result.
+- Concatenate two user input strings and print the result.
 
 Session 02 Review
 - Create a variable with a value, then print it's type.
