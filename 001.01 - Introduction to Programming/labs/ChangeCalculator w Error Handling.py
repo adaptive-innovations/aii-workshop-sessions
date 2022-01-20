@@ -42,6 +42,8 @@ AmountChange = AmountTendered - AmountOwed
 for each in CurrencyTypes:
     CurrencyCounts.append(0)
 
+
+
 # Figure out the Change Currency
 AmountCalculated = (int(AmountChange*100)) / 100
 while AmountCalculated > 0:
