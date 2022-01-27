@@ -1,80 +1,60 @@
 [
   {
     "ID": 1,
-    "First Name": "Brad",
-    "Last Name": "Brooks",
     "Gender": "Male",
     "Age": 20,
     "Email": "b.brooks@randatmail.com"
   },
   {
     "ID": 2,
-    "First Name": "Ada",
-    "Last Name": "Owens",
     "Gender": "Female",
     "Age": 21,
     "Email": "a.owens@randatmail.com"
   },
   {
     "ID": 3,
-    "First Name": "Hailey",
-    "Last Name": "Hill",
     "Gender": "Female",
     "Age": 24,
     "Email": "h.hill@randatmail.com"
   },
   {
     "ID": 4,
-    "First Name": "Alan",
-    "Last Name": "Chapman",
     "Gender": "Male",
     "Age": 19,
     "Email": "a.chapman@randatmail.com"
   },
   {
     "ID": 5,
-    "First Name": "Annabella",
-    "Last Name": "Stewart",
     "Gender": "Female",
     "Age": 18,
     "Email": "a.stewart@randatmail.com"
   },
   {
     "ID": 6,
-    "First Name": "Lily",
-    "Last Name": "Bennett",
     "Gender": "Female",
     "Age": 26,
     "Email": "l.bennett@randatmail.com"
   },
   {
     "ID": 7,
-    "First Name": "Ada",
-    "Last Name": "Barnes",
     "Gender": "Female",
     "Age": 27,
     "Email": "a.barnes@randatmail.com"
   },
   {
     "ID": 8,
-    "First Name": "Amelia",
-    "Last Name": "Wells",
     "Gender": "Female",
     "Age": 25,
     "Email": "a.wells@randatmail.com"
   },
   {
     "ID": 9,
-    "First Name": "Ryan",
-    "Last Name": "Myers",
     "Gender": "Male",
     "Age": 22,
     "Email": "r.myers@randatmail.com"
   },
   {
     "ID": 10,
-    "First Name": "Vanessa",
-    "Last Name": "Dixon",
     "Gender": "Female",
     "Age": 25,
     "Email": "v.dixon@randatmail.com"
