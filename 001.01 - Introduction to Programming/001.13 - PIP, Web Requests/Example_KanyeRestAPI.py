@@ -10,4 +10,4 @@ response = requests.request(method, url, headers=headers, data=payload)
 responseStr = response.text
 responseJSON = response.json()
 
-print(responseStr)
+print(responseJSON['quote'])
