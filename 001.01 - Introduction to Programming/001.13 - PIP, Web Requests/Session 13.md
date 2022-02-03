@@ -51,3 +51,4 @@ print(responseJSON['quote'])
 
 
 ## Challenge
+Find a cool API and show it to us next week!
