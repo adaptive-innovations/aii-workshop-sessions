@@ -1,8 +1,6 @@
 import json
 import requests
 
-
-
 method = "GET"
 # Example: https://api.funtranslations.com/translate/pirate.json?text=This is the best day of my life!
 url = "https://api.funtranslations.com/translate/pirate.json?text=" 

@@ -1,8 +1,6 @@
 import json
 import requests
 
-
-
 method = "GET"
 #url = "https://pokeapi.co/api/v2/gender/1" # Female
 url = "https://pokeapi.co/api/v2/gender/2" # Male 
