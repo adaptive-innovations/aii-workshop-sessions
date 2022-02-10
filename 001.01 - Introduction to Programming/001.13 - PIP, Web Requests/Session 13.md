@@ -7,8 +7,6 @@
 
 ## Last Week's Challenge
 
-## Troubleshooting & Debugging - Tips & Tricks
-
 ## PIP install additional libraries
 Install PIP in powershell
 ```powershell
