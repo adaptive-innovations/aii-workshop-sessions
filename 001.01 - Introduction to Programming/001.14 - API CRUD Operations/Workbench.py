@@ -4,7 +4,7 @@ import requests
 import json
 
 # Go to https://crudcrud.com and get your URL
-myCrudCrudURL = 'https://crudcrud.com/api/4efc5cf883b7402496de9c9dff8d4799'
+myCrudCrudURL = 'https://crudcrud.com/api/c103f1ff2e6642d0971ba24352b2ca74'
 thisProjectName = 'WorkshopSession14'
 url = f"{myCrudCrudURL}/{thisProjectName}"
 headers = {'Content-Type': 'application/json'}
