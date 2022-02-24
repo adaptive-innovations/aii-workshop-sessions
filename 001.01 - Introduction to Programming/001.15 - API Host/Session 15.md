@@ -1,24 +1,20 @@
 # APP A: Introduction to Programming
-## Session 14
+## Session 15
 
 |Session Time|Facilitator|Starting URL                                                               |
 |------------|-----------|---------------------------------------------------------------------------|
-|1 Hour      |GR         |[API Crud Operations](https://crudcrud.com/) |
+|1 Hour      |GR         | |
 
 ## Last Week's Challenge
 
-## API CRUD Operations
-- Create
-- Read
-- Update
-- Delete
+## API Hosting
+- Explain Flask
+- Explain Waitress
 
-
-[Status Codes](https://www.restapitutorial.com/httpstatuscodes.html)
 
 See Workbench.py for example functions.
 
 
 ## Challenge
-Give the user a list of current guests ubvited to the party.
-Use the CRUD API to retrieve the list, and allow the end user to remove/add guests & change each guest's preferred cocktail.
+Host an API at ```http://localhost/people```.
+The program should read Headers & Rows from ```People.csv``` and return to the requestor as a JSON object.
