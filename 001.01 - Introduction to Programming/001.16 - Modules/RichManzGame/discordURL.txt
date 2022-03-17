@@ -1,0 +1,3 @@
+Note: Must use POST not GET
+
+https://discord.com/api/webhooks/953828697864020169/002lMyA_nZq7p3_8ls0Rx9o4X_Fs6kkN8rdx3vlzIepeUcNOHCuUblvIMOyDFbc7z_9l
