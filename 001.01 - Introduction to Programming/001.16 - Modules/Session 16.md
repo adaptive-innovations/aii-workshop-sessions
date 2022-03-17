@@ -9,7 +9,34 @@
 
 ## Modules
 - Modules
+
+Basic:
+```py
+import myModule
+```
+
+With Alias:
+```py
+import myModule as x
+```
+
 - Libraries (of modules)
+
+Basic:
+```py
+from myLibrary import doMathStuff, myModule
+```
+
+With Alias:
+```py
+from myLibrary import myModule as x, doMathStuff as y
+
+something = x.tellMeSomething()
+print(something)
+
+number = y.addTheseNumbers(2, 450)
+print(number)
+```
 
 
 

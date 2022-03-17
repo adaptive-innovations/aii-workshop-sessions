@@ -1,7 +1,7 @@
-import myModule
+from myLibrary import myModule as x, doMathStuff as y
 
-something = myModule.tellMeSomething()
+something = x.tellMeSomething()
 print(something)
 
-desiredNumber = myModule.addTheseNumbers(1, 2)
-print(desiredNumber)
+number = y.addTheseNumbers(2, 450)
+print(number)
