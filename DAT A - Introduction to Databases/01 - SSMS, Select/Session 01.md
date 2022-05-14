@@ -1,6 +1,7 @@
 # DAT A - Introduction to Databases
 ## Session 01
 
+
 |Session Time|Facilitator|Starting URL                                                          |
 |------------|-----------|----------------------------------------------------------------------|
 |1 Hour      |GR         |[SQL Basic Syntax](https://www.w3schools.com/sql/sql_syntax.asp)     |
@@ -36,4 +37,5 @@ SELECT DISTINCT City, COUNT(*) FROM Customers;
 
 
 ## Challenge
-Create a query that...
+Use ```SELECT * FROM TableName``` statements to explore the ```Orders```, ```Customers```, & ```Employees``` tables.
+- Do they seem related? If so, how?
