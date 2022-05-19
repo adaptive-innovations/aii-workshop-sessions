@@ -30,7 +30,7 @@ SELECT DISTINCT City FROM Customers;
 
 SELECT COUNT of DISTINCT Columns
 ```sql
-SELECT DISTINCT City, COUNT(*) FROM Customers;
+SELECT COUNT(DISTINCT City) FROM Customers;
 ```
 
 
