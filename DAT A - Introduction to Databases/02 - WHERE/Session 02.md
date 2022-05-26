@@ -37,6 +37,12 @@ SELECT * FROM Products
 WHERE UnitsInStock >= 101;
 ```
 
+Is Not Equal To
+```sql
+SELECT * FROM Products
+WHERE UnitsInStock != 101;
+```
+
 Is Greater Than Date
 ```sql
 SELECT * FROM Orders
@@ -66,3 +72,11 @@ Discontinued = 0 AND
 ```
 
 ## Challenge
+- How many ```Products``` have a unit price > 25?
+- How many ```Products``` have a > 100 in stock?
+- How many ```Products``` have been discontinued?
+- How many ```Customers``` are in Seattle?
+- How many ```Customers``` are in France?
+- Find an employee in ```Employees``` who can assist our customers in Seattle?
+- Are all of our ```Employees``` either ```Mr.```, ```Mrs.```, or ```Ms.```?
+- How many ```Regions``` are there?
