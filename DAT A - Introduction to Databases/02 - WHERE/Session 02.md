@@ -6,6 +6,12 @@
 |------------|-----------|----------------------------------------------------------------------|
 |1 Hour      |GR         |[The WHERE Clause](https://www.w3schools.com/sql/sql_where.asp)     |
 
+
+## Relationships in our Northwinds Sample Database
+<a href="https://raw.githubusercontent.com/joewebb11/dsc-2-final-project-online-ds-pt-112618/master/Northwind_ERD.png">
+  <img src="https://raw.githubusercontent.com/joewebb11/dsc-2-final-project-online-ds-pt-112618/master/Northwind_ERD.png" alt="Northwinds ERD" width=100%/>
+</a>
+
 ## Code Highlights
 Is Equal To Text
 ```sql
