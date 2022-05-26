@@ -1,5 +1,5 @@
 # DAT A - Introduction to Databases
-## Session 01
+## Session 02
 
 
 |Session Time|Facilitator|Starting URL                                                          |
