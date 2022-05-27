@@ -8,8 +8,8 @@
 
 
 ## Relationships in our Northwinds Sample Database
-<a href="https://raw.githubusercontent.com/joewebb11/dsc-2-final-project-online-ds-pt-112618/master/Northwind_ERD.png">
-  <img src="https://raw.githubusercontent.com/joewebb11/dsc-2-final-project-online-ds-pt-112618/master/Northwind_ERD.png" alt="Northwinds ERD" width=100%/>
+<a href="/Northwind_DB_Diagram.png">
+  <img src="/Northwind_DB_Diagram.png" alt="Northwinds ERD" width=100%/>
 </a>
 
 ## Code Highlights
