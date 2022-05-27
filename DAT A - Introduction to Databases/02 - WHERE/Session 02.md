@@ -8,8 +8,8 @@
 
 
 ## Relationships in our Northwinds Sample Database
-<a href="/Northwind_DB_Diagram.png">
-  <img src="/Northwind_DB_Diagram.png" alt="Northwinds ERD" width=100%/>
+<a href="https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/02%20-%20WHERE/Northwind_DB_Diagram.png?raw=true">
+  <img src="https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/02%20-%20WHERE/Northwind_DB_Diagram.png?raw=true" alt="Northwinds ERD" width=100%/>
 </a>
 
 ## Code Highlights
