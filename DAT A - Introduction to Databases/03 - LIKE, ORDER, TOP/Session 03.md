@@ -7,6 +7,19 @@
 |1 Hour      |GR         |[Order By](https://www.w3schools.com/sql/sql_orderby.asp)     |
 
 ## Code Highlights
+Comment Row
+```sql
+-- This is a comment.
+```
+
+Comment Multiple Rows
+```sql
+/*
+This is a comment.
+This is another comment.
+*/
+```
+
 Is Equal To Text
 ```sql
 SELECT * FROM Customers
