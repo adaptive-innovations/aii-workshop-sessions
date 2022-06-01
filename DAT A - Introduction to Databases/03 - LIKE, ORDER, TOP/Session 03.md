@@ -4,7 +4,7 @@
 
 |Session Time|Facilitator|Starting URL                                                          |
 |------------|-----------|----------------------------------------------------------------------|
-|1 Hour      |GR         |[The WHERE Clause](https://www.w3schools.com/sql/sql_where.asp)     |
+|1 Hour      |GR         |[Order By](https://www.w3schools.com/sql/sql_orderby.asp)     |
 
 ## Code Highlights
 Is Equal To Text
