@@ -7,6 +7,38 @@
 |1 Hour      |GR         |[The WHERE Clause](https://www.w3schools.com/sql/sql_where.asp)     |
 
 ## Code Highlights
+Is Equal To Text
+```sql
+SELECT * FROM Customers
+WHERE ContactTitle = 'Owner';
+```
+
+Contains Text
+```sql
+SELECT * FROM Customers
+WHERE ContactTitle LIKE '%Sales%';
+```
+
+Begins With Text
+```sql
+SELECT * FROM Customers
+WHERE CompanyName LIKE 'A%';
+```
+
+Ends With Text
+```sql
+SELECT * FROM Customers
+WHERE CompanyName LIKE '%r';
+```
+
+For More wildcard options, check out https://www.w3schools.com/sql/sql_wildcards.asp
+
+Does NOT Contain Text
+```sql
+SELECT * FROM Customers
+WHERE ContactTitle NOT LIKE '%Sales%';
+```
+
 ORDER BY clause
 ```sql
 SELECT * FROM Orders
