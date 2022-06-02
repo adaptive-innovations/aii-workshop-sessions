@@ -96,3 +96,6 @@ ORDER BY UnitPrice DESC;
 - How many ```Products``` end with the letter ```a```? (Using LIKE, %)
 - How many ```Products``` start with the letter ```a```? (Using LIKE, %)
 - How many ```Products``` are NOT in Boxes? (Using NOT LIKE)
+- List Distinct Countries in ```Orders``` in Alphabetical order. (Using DISTINCT, ORDER BY)
+- What is the most recent ShippedDate in ```Orders```?
+- Write a query which retrieves records from ```Orders``` using ORDER BY, WHERE, & TOP. Columns are your choice.
