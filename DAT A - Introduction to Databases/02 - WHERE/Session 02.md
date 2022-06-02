@@ -85,4 +85,4 @@ Discontinued = 0 AND
 - How many ```Customers``` are in France?
 - Find an employee in ```Employees``` who can assist our customers in Seattle?
 - Are all of our ```Employees``` either ```Mr.```, ```Mrs.```, or ```Ms.```?
-- How many ```Regions``` are there?
+- How many Regions are in the ```Region``` table?

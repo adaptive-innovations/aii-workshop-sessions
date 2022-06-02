@@ -64,6 +64,20 @@ SELECT * FROM Orders
 ORDER BY Freight DESC;
 ```
 
+ORDER BY clause, ordering by multiple columns
+```sql
+SELECT * FROM Orders
+ORDER BY OrderDate ASC, CustomerID ASC;
+```
+
+ORDER BY clause, with a WHERE clause
+```sql
+SELECT *
+FROM Orders
+WHERE CustomerID = 'VINET'
+ORDER BY OrderDate DESC;
+```
+
 TOP to limit results
 ```sql
 SELECT TOP 5 * FROM Orders
@@ -78,3 +92,7 @@ ORDER BY UnitPrice DESC;
 
 
 ## Challenge
+- How many ```Products``` are in jars? (Using LIKE)
+- How many ```Products``` end with the letter ```a```? (Using LIKE, %)
+- How many ```Products``` start with the letter ```a```? (Using LIKE, %)
+- How many ```Products``` are NOT in Boxes? (Using NOT LIKE)
