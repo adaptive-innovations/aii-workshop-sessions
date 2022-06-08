@@ -16,29 +16,111 @@ We use joins to get information from related tables.
 SELECT Statements Example
 ```sql
 SELECT
-    ProductID
-    ,ProductName
-    ,CategoryID
-FROM Products;
+    OrderID
+    ,CustomerID
+FROM Orders;
 
 SELECT
-    CategoryID
-    ,CategoryName
-    ,Description
-FROM Categories;
+    CustomerID
+    ,CompanyName
+FROM Customers;
+
 ```
 Note the relationship: ```CategoryID```
 
 The JOIN Statement
 ```sql
 SELECT
+    Orders.OrderID
+    ,Orders.CustomerID
+    ,Customers.CompanyName
+FROM Orders
+JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+```
+
+Another JOIN Example
+```sql
+SELECT
     Products.ProductID
     ,Products.ProductName
-    ,Products.CategoryID
     ,Categories.CategoryName
     ,Categories.Description
 FROM Products
 JOIN Categories ON Products.CategoryID = Categories.CategoryID;
+```
+
+With a WHERE Clause
+```sql
+SELECT
+    Products.ProductID
+    ,Products.ProductName
+    ,Categories.CategoryName
+    ,Categories.Description
+FROM Products
+JOIN Categories ON Products.CategoryID = Categories.CategoryID
+WHERE Products.ProductName LIKE 'G%';
+```
+
+With an ORDER BY Clause
+```sql
+SELECT
+    Products.ProductID
+    ,Products.ProductName
+    ,Categories.CategoryName
+    ,Categories.Description
+FROM Products
+JOIN Categories ON Products.CategoryID = Categories.CategoryID
+WHERE Categories.Description LIKE '%SWEET%'
+ORDER BY Categories.CategoryName ASC, Products.ProductName ASC;
+```
+
+With a COMMENT
+```sql
+SELECT
+    Products.ProductID
+    ,Products.ProductName
+    ,Categories.CategoryName
+    ,Categories.Description
+FROM Products
+JOIN Categories ON Products.CategoryID = Categories.CategoryID
+WHERE Categories.Description LIKE '%SWEET%' -- Per Ted, the boss man.
+ORDER BY Categories.CategoryName ASC, Products.ProductName ASC;
+```
+
+With a TOP Clause
+```sql
+SELECT TOP(25)
+    Products.ProductID
+    ,Products.ProductName
+    ,Categories.CategoryName
+    ,Categories.Description
+FROM Products
+JOIN Categories ON Products.CategoryID = Categories.CategoryID
+WHERE Categories.Description LIKE '%SWEET%' -- Per Ted, the boss man.
+ORDER BY Categories.CategoryName ASC, Products.ProductName ASC;
+```
+
+Aliases: Table Name Example
+```sql
+SELECT
+    P.ProductID
+    ,P.ProductName
+    ,C.CategoryName
+    ,C.Description
+FROM Products AS P
+JOIN Categories AS C ON P.CategoryID = C.CategoryID;
+```
+
+Aliases: Column Name Example
+```sql
+SELECT
+    P.ProductID
+    ,P.ProductName AS Name
+    ,P.CategoryID
+    ,C.CategoryName AS Category
+    ,C.Description AS CategoryDescription
+FROM Products AS P
+JOIN Categories AS C ON P.CategoryID = C.CategoryID;
 ```
 
 ### Relationship types
@@ -73,3 +155,4 @@ In a **Many to One** relationship, each record in Table 1 has multiple instances
 </a>
 
 ## Challenge
+- 
