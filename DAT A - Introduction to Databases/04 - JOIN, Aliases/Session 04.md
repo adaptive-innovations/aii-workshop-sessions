@@ -4,17 +4,36 @@
 
 |Session Time|Facilitator|Starting URL                                                          |
 |------------|-----------|----------------------------------------------------------------------|
-|1 Hour      |GR         |[Order By](https://www.w3schools.com/sql/sql_orderby.asp)     |
+|1 Hour      |GR         |[Joins](https://www.w3schools.com/sql/sql_join.asp)     |
 
 ## Code Highlights
-SELECT Statements We've Done So Far
+SELECT Statements Example
 ```sql
-SELECT ProductID, ProductName, CategoryID FROM Products;
-SELECT ProductName FROM Categories;
+SELECT
+    ProductID
+    ,ProductName
+    ,CategoryID
+FROM Products;
+
+SELECT
+    CategoryID
+    ,CategoryName
+    ,Description
+FROM Categories;
 ```
 Note the relationship: ```CategoryID```
 
-
+The JOIN Statement
+```sql
+SELECT
+    Products.ProductID
+    ,Products.ProductName
+    ,Products.CategoryID
+    ,Categories.CategoryName
+    ,Categories.Description
+FROM Products
+JOIN Categories ON Products.CategoryID = Categories.CategoryID;
+```
 
 ### Relationship types
 #### One to One
