@@ -23,6 +23,12 @@ FROM Categories;
 ```
 Note the relationship: ```CategoryID```
 
+What is a Join?
+<a href="https://fmhelp.filemaker.com/help/18/fmp/en/index.html#page/FMP_Help/one-to-many-relationships.html">
+  <img src="https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/04%20-%20JOIN,%20Aliases/TableRelationship.png?raw=true" alt="Credit: Filemaker" width=75%/>
+</a>
+
+
 The JOIN Statement
 ```sql
 SELECT
