@@ -6,7 +6,7 @@
 |------------|-----------|----------------------------------------------------------------------|
 |1 Hour      |GR         |[Joins](https://www.w3schools.com/sql/sql_join.asp)     |
 
-We use joins to get information from related tables.
+We use joins to **merge** information from related tables.
 
 <a href="https://fmhelp.filemaker.com/help/18/fmp/en/index.html#page/FMP_Help/one-to-many-relationships.html">
   <img src="https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/04%20-%20JOIN,%20Aliases/TableRelationship.png?raw=true" alt="Credit: Filemaker" width=75%/>
@@ -26,7 +26,7 @@ SELECT
 FROM Customers;
 
 ```
-Note the relationship: ```CategoryID```
+Note the relationship: ```CustomerID```
 
 The JOIN Statement
 ```sql
