@@ -28,6 +28,7 @@ SELECT
 FROM Categories;
 ```
 Note the relationship: ```CategoryID```
+
 The JOIN Statement
 ```sql
 SELECT
