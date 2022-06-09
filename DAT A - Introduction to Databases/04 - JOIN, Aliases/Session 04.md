@@ -154,6 +154,10 @@ In a **Many to One** relationship, each record in Table 1 has multiple instances
   <img src="https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/04%20-%20JOIN,%20Aliases/Relationships%20-%20Many%20to%20One.png?raw=true" alt="Credit: Oracle" width=75%/>
 </a>
 
+
+Here's our reference drawing we made in class to demonstrate JOIN results:
+[Join Illustration](https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/04%20-%20JOIN,%20Aliases/JoinDemonstration.PNG?raw=true)
+
 ## Challenge
 - Choose a table to JOIN with ```Orders```, and write a query that includes at least 3 columns from each table.
 - Demonstrate using a WHERE Clause with your query.
