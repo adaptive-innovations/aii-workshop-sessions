@@ -89,7 +89,7 @@ ORDER BY Categories.CategoryName ASC, Products.ProductName ASC;
 
 With a TOP Clause
 ```sql
-SELECT TOP(25)
+SELECT TOP(20)
     Products.ProductID
     ,Products.ProductName
     ,Categories.CategoryName
@@ -118,7 +118,7 @@ SELECT
     ,P.ProductName AS Name
     ,P.CategoryID
     ,C.CategoryName AS Category
-    ,C.Description AS CategoryDescription
+    ,C.Description AS [Category Description]
 FROM Products AS P
 JOIN Categories AS C ON P.CategoryID = C.CategoryID;
 ```
@@ -155,4 +155,9 @@ In a **Many to One** relationship, each record in Table 1 has multiple instances
 </a>
 
 ## Challenge
-- 
+- Choose a table to JOIN with ```Orders```, and write a query that includes at least 3 columns from each table.
+- Demonstrate using a WHERE Clause with your query.
+- Demonstrate using an ORDER BY Clause with your query.
+- Demonstrate using Aliases with your query's Table names.
+- Demonstrate using Aliases with some of your query's Column names.
+- BONUS: Use Multiple Joins to Join 3 or more different related tables.
