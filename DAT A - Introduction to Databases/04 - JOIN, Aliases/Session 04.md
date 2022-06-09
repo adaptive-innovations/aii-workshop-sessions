@@ -156,7 +156,9 @@ In a **Many to One** relationship, each record in Table 1 has multiple instances
 
 
 Here's our reference drawing we made in class to demonstrate JOIN results:
-[Join Illustration](https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/04%20-%20JOIN,%20Aliases/JoinDemonstration.PNG?raw=true)
+<a href="https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/04%20-%20JOIN,%20Aliases/JoinDemonstration.PNG?raw=true">
+  <img src="https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/04%20-%20JOIN,%20Aliases/JoinDemonstration.PNG?raw=true" alt="JOIN Illustratione" width=100%/>
+</a>
 
 ## Challenge
 - Choose a table to JOIN with ```Orders```, and write a query that includes at least 3 columns from each table.
