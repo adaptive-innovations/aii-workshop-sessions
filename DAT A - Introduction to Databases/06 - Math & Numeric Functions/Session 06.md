@@ -186,4 +186,9 @@ SELECT design_id
 > Basic Syntax: ```ABS(number)```</br>Example: ```ABS(100-300)```</br>Example Result: ```200```
 
 ## Challenge
-- 
+- For each record in ```Products```, multiply the ```UnitPrice``` by ```UnitsInStock``` so we can see the total dollar value of what we have in the warehouse per product.
+- For each record in ```Products```, multiply the ```UnitPrice``` by ```UnitsOnOrder``` so we can see how much money we have tied up in orders per product.
+- What is the most expensive product cost in ```Products```, according to ```UnitPrice```? Using ```MAX```
+- What is the least expensive product cost in ```Products```, according to ```UnitPrice```? Using ```MIN```
+- What is the average product cost in ```Products```, according to ```UnitPrice```? Using ```AVG```
+- Assuming that the ```Products``` table UnitPrice is what we paid for the product, and the ```Order Details``` UnitPrice is what we sold it for, ```JOIN``` the ```Products``` table with the ```Order Details``` table to see how much money we're making or losing money per order. Remember to consider discount and quantity, but disregard freight.
