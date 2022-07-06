@@ -1,5 +1,5 @@
 # DAT A - Introduction to Databases
-## Session 06
+## Session 07
 
 
 |Session Time|Facilitator|Starting URL                                                          |
@@ -203,7 +203,27 @@ FROM Contacts;
 ```
 
 Export It!
-
-## Notes
+<a href="https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/07%20-%20String%20Functions/ExportToExcel.png?raw=true">
+  <img src="https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/07%20-%20String%20Functions/ExportToExcel.png?raw=true" alt="Export to Excel" width=100%/>
+</a>
 
 ## Challenge
+In the ```Other``` column, each person's Nickname can be found between the ```[``` parenthesis ```]```.
+Extract the nickname:
+A. Use CHARINDEX to identify the position of the ```[```.
+B. Use CHARINDEX to identify the position of the ```]```.
+C. Subtract ```A``` - ```B``` to identify the length of the Nickname string.
+D. Use SUBSTRING to fetch the nickname from ```Other``` using ```SUBSTRING()``` along with ```A``` & ```C```.
+
+<details>
+  <summary>
+    Click this for a hint ONLY if you're stuck.
+  </summary>
+  SUBSTRING(Other, <code>A</code> + 1, <code>B</code> - <code>A</code> - 1) as Nickname
+  <details>
+    <summary>
+      Just tell me the answer, I hate this.
+    </summary>
+    <code>SUBSTRING(Other, CHARINDEX('[', Other) + 1, CHARINDEX(']', Other) - CHARINDEX('[', Other) - 1) as Nickname</code>
+  </details>
+</details>
