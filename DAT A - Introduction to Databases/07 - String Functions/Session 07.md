@@ -7,6 +7,12 @@
 |1 Hour      |GR         |[String Functions](https://www.w3schools.com/sql/sql_ref_sqlserver.asp)     |
 
 
+We need to provide our customer with a database data export excel file.
+The data in the database does not meet their required specifications and must be cleaned up.
+Desired Output ([Excel]() | [PDF]())
+
+
+
 ## Code Highlights
 Basic query on the ```Contacts``` table in the ```workshop``` database.
 ```sql
