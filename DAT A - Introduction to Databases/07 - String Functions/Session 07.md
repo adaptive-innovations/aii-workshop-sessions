@@ -9,7 +9,7 @@
 
 We need to provide our customer with a database data export excel file.
 The data in the database does not meet their required specifications and must be cleaned up.
-Desired Output ([Excel](https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/07%20-%20String%20Functions/output.xlsx) | [PDF](https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/07%20-%20String%20Functions/output.pdf))
+Desired Output ([Excel](https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/07%20-%20String%20Functions/output.xlsx?raw=true) | [PDF](https://github.com/adaptive-innovations/aii-workshop-sessions/blob/main/DAT%20A%20-%20Introduction%20to%20Databases/07%20-%20String%20Functions/output.pdf?raw=true))
 
 
 
