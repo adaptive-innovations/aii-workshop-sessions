@@ -214,7 +214,7 @@ Export It!
 </a>
 
 ## Challenge
-In the ```Other``` column, each person's Nickname can be found between the ```[``` parenthesis ```]```.
+In the ```Other``` column, each person's Nickname can be found between the ```[``` brackets ```]```.
 Extract the nickname:
 
 A. Use CHARINDEX to identify the position of the ```[```.
@@ -223,7 +223,7 @@ B. Use CHARINDEX to identify the position of the ```]```.
 
 C. Subtract ```A``` - ```B``` to identify the length of the Nickname string.
 
-D. Use SUBSTRING to fetch the nickname from ```Other``` using ```SUBSTRING()``` along with ```A``` & ```C```.
+D. Fetch the nickname from ```Other``` using ```SUBSTRING()``` along with ```A``` & ```C```.
 
 <details>
   <summary>
