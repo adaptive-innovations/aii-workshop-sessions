@@ -48,6 +48,19 @@ VALUES (
 );
 ```
 
+If you're inserting into every single column, and in the order the columns are defined in the database, you can omit the insert column list.
+```sql
+INSERT INTO insertTest
+VALUES (
+    'What!'
+    ,1.000
+    ,1776/15
+    ,123.455
+    ,'05/15/2022 12:30:15'
+    ,DATEFROMPARTS(2000, 01, 01)
+);
+```
+
 
 
 
