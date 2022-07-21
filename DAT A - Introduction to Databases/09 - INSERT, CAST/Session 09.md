@@ -26,7 +26,31 @@
 
 
 
-## Other Data Types
+## Code Highlights
+Inserting Records into a Table
+```sql
+INSERT INTO insertTest
+(
+    stringColumn
+    ,bitColumn
+    ,intColumn
+    ,decimalColumn
+    ,datetimeColumn
+    ,dateColumn
+)
+VALUES (
+    'What!'
+    ,1.000
+    ,1776/15
+    ,123.455
+    ,'05/15/2022 12:30:15'
+    ,DATEFROMPARTS(2000, 01, 01)
+);
+```
+
+
+
+
 
 ## Notes
 
@@ -38,10 +62,5 @@
 </a>
 
 
-## Code Highlights
-Test
-```sql
-
-```
 
 ## Challenge
