@@ -60,6 +60,69 @@ SELECT * FROM insertTest WHERE entryID < 10;
 ```
 <br>
 
+
+Delete a record
+```sql
+DELETE FROM insertTest
+WHERE entryID = 10;
+
+SELECT * FROM insertTest WHERE entryID < 10;
+```
+<br>
+
+
+GROUP BY
+```sql
+SELECT
+    ShipCountry
+FROM Orders
+GROUP BY ShipCountry;
+```
+
+
+Aggregate Functions
+```sql
+SELECT
+    ShipCountry
+    ,SUM(Freight) as FreightSum
+    ,AVG(Freight) as FreightAvg
+    ,COUNT(*) as FreightCountRows
+    ,MAX(Freight) as FreightMax
+    ,MIN(Freight) as FreightMin
+FROM Orders
+GROUP BY ShipCountry;
+```
+
+Aggregate Functions: Which country do we ship to the most?
+```sql
+SELECT TOP(1)
+    ShipCountry
+    ,SUM(Freight) as FreightSum
+    ,AVG(Freight) as FreightAvg
+    ,COUNT(*) as FreightCountRows
+    ,MAX(Freight) as FreightMax
+    ,MIN(Freight) as FreightMin
+FROM Orders
+GROUP BY ShipCountry
+ORDER BY COUNT(*) DESC;
+```
+
+Aggregate Functions with JOIN
+```sql
+SELECT 
+    CustomerID
+    ,Employees.FirstName
+    ,SUM(Freight) as FreightSum
+    ,AVG(Freight) as FreightAvg
+    ,COUNT(*) as CountRows
+    ,MAX(ShipName) as Max
+    ,MIN(ShipName) as Min
+FROM Orders
+JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+GROUP BY CustomerID, Employees.FirstName
+ORDER BY COUNT(*) DESC;
+```
+
 ## Notes
 
 
