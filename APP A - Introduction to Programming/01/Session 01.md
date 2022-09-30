@@ -43,10 +43,6 @@ print(x)
 Comments
 ```py
 # This does nothing
-x = 1
-print(x)
-x = 100
-print(x)
 ```
 
 ```py
