@@ -13,6 +13,7 @@ print('Hello, World!')
 
 ```py
 # Variables
+x = 1
 print(x)
 ```
 
