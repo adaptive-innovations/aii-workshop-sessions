@@ -15,5 +15,8 @@
 ## Discussion
 - Look Into
   - Scheduled Jobs
+- SELECT INTO, INSERT SELECT
+- Databases & Schemas
+- TRY CATCH
 
 ## Challenge

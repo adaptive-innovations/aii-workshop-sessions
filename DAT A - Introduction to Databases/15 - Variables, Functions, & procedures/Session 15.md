@@ -111,6 +111,47 @@ Show stored procedures
 SELECT * FROM sys.objects WHERE type_desc LIKE '%PROCEDURE%';
 ```
 
+THE BIG EXAMPLE OF A TABLE AND VIEW RESET
+```sql
+-- CREATE PROCEDURE
+CREATE OR ALTER PROCEDURE ResetParentsTableGR
+AS
+    -- DECLARE VARIABLES
+    DECLARE @RowID INT;
+    SET @RowID = 0;
+    
+    -- DROP AND RECREATE TABLE (Dropping the table serves to clear all of the data as well)
+    DROP TABLE Parents;
+    CREATE TABLE Parents 
+    (
+        [id] INT
+        ,[name] NVARCHAR(MAX)
+    );
+
+    -- INSERT THE ROWS
+    SET @RowID = @RowID + 1;
+    INSERT INTO Parents ([id], [name]) VALUES (@RowID, 'Elrond');
+    SET @RowID = @RowID + 1;
+    INSERT INTO Parents ([id], [name]) VALUES (@RowID, 'Christopher Pevensie');
+    SET @RowID = @RowID + 1;
+    INSERT INTO Parents ([id], [name]) VALUES (@RowID, 'John Wick');
+    GO
+
+    -- MAKE THE VIEW IF NOT EXISTS
+    CREATE OR ALTER VIEW v_parents AS
+    SELECT
+        [id]
+        ,[name]
+        ,dbo.getLocalDatetimeEF() AS ThisTime
+    FROM Parents
+GO
+
+-- USE THE PROCEDURE!
+EXEC ResetParentsTableGR;
+-- VERIFY THE VIEW WORKS!
+SELECT * FROM v_parents GO
+```
+
 
 ## Discussion
 Functions vs Stored Procedures
